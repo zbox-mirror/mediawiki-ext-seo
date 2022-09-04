@@ -1,0 +1,95 @@
+{
+  "name": "MW_EXT_SEO",
+  "version": "1.0.0",
+  "author": [
+    "[https://z17.dev/ z17 Dev]",
+    "[https://z17.cx/ z17 CX]",
+    "..."
+  ],
+  "url": "https://github.com/cmfstore",
+  "descriptionmsg": "mw-ext-seo-desc",
+  "license-name": "[https://choosealicense.com/licenses/mit/ MIT]",
+  "type": "",
+  "require": {
+    "MediaWiki": ">= 1.31.0",
+    "extensions": {
+      "MW_EXT_Kernel": "*"
+    }
+  },
+  "config": {
+    "EXT_SEO_Phone": {
+      "value": ""
+    },
+    "EXT_SEO_Publisher": {
+      "value": ""
+    },
+    "EXT_SEO_PublisherLogo": {
+      "value": ""
+    },
+    "EXT_SEO_Manifest": {
+      "value": ""
+    },
+    "EXT_SEO_URL_Vk": {
+      "value": ""
+    },
+    "EXT_SEO_URL_Facebook": {
+      "value": ""
+    },
+    "EXT_SEO_URL_Twitter": {
+      "value": ""
+    },
+    "EXT_SEO_URL_Discord": {
+      "value": ""
+    },
+    "EXT_SEO_ThemeColor": {
+      "value": "#f3f6f9"
+    },
+    "EXT_SEO_MSTileColor": {
+      "value": "#f3f6f9"
+    },
+    "EXT_SEO_Twitter_Site": {
+      "value": "metadata_team"
+    },
+    "EXT_SEO_Twitter_Creator": {
+      "value": "metadata_team"
+    },
+    "EXT_SEO_StreetAddress": {
+      "value": ""
+    },
+    "EXT_SEO_AddressLocality": {
+      "value": "Moscow"
+    },
+    "EXT_SEO_AddressRegion": {
+      "value": ""
+    },
+    "EXT_SEO_PostalCode": {
+      "value": ""
+    },
+    "EXT_SEO_AddressCountry": {
+      "value": "RUS"
+    },
+    "EXT_SEO_ContactType": {
+      "value": "customer service"
+    },
+    "EXT_SEO_AuthorName": {
+      "value": "SYSTEM"
+    },
+    "EXT_SEO_ArticlePublisher": {
+      "value": ""
+    }
+  },
+  "AutoloadClasses": {
+    "MediaWiki\\Extension\\CMFStore\\MW_EXT_SEO": "MW_EXT_SEO.class.php"
+  },
+  "Hooks": {
+    "OutputPageParserOutput": [
+      "MediaWiki\\Extension\\CMFStore\\MW_EXT_SEO::onOutputPageParserOutput"
+    ]
+  },
+  "MessagesDirs": {
+    "MW_EXT_SEO": [
+      "i18n"
+    ]
+  },
+  "manifest_version": 2
+}
